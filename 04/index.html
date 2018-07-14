@@ -4,10 +4,28 @@
   <meta charset="utf-8">
 	<title>Ejercicio 04</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../_assets/css/style.css">
+	<script src="../_assets/js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
   <button class="add_name">+</button>
   <ul class="names"></ul>
+<script type="text/javascript">
+
+	$(".add_name").click(function(event){
+		var valor = prompt('Por favor agrega un nombre a la lista', 'Harry Potter');
+	    $(".names").append("<li><spam>" + valor + "</spam></li><a href='#' class='remove_name>x</a></li>'");
+
+	});
+   $("a[href='#']").on("click", function(event){
+	event.preventDefault();
+	
+	});
+
+   $("")
+
+
+</script>
 
 </body>
 </html>
